@@ -27,9 +27,8 @@ const lightbox = new SimpleLightbox('.gallery a', options);
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-
-  gallery.innerHTML = `<span class="loader"></span>`;
-
+  
+  gallery.innerHTML = "";
   const inputValue = input.value.trim();
 
   if (!inputValue) {
