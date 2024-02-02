@@ -1,25 +1,67 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+* {
+  box-sizing: border-box;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.gallery {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 250ms linear;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
+
+/* ////////////////////test//////////////////// */
+
+.title {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.list-item {
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.my-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div {
+  display: flex;
 }
